@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    position: relative;
+    background: #0d1b2a;
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+    overflow: hidden;
+}
+
+.btn{
+    position: absolute;
+    top: 10%;
+    left: 55%;
+    background: #4e777b;
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 0.5s ease ;
+}
+
+.btn span{
+    display: block;
+    background: #03071e;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    margin-left: 2px;
+    transition: background 0.5s ease, margin-left 0.5s ;
+}
+
+.lamp__container{
+    position: absolute;
+    top: -40px;
+    left: 40%;
+    width: 200px;
+}
+
+.lamp{
+    width: 100%;
+    z-index: 99;
+}
+
+.light{
+    position: absolute;
+    top: 97%;
+    left: 45%;
+    transform: translateX(-50%);
+    width: 700px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.active{
+    background: #84a98c;
+
+}
+
+.active span{
+    background: #ffe6a7;
+    margin-left: 31px;
+}
+
+.on{
+    opacity: 1;
+}
+/* Add styles for the lamp text container */
+.lamp-text-container {
+    text-align: center;
+    margin-top: 50px; /* Increase the margin-top to move the text further down */
+    top: 100px;
+}
+
+/* Add styles for the lamp text */
+.lamp-text {
+    font-size: 25px; /* Adjust the font size as needed */
+    font-weight: bold; /* Add any other styles you want */
+    color: #700aed; /* Customize the text color */
+}
